@@ -2,6 +2,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const Table = styled.table`
+  margin-bottom: 3em !important;
+`
 
 const Card = styled.div`
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
@@ -79,7 +82,7 @@ class DemoComponent extends React.Component {
   render() {
     return (
       <div className="position-relative table-responsive">
-        <table className="table table-hover">
+        <Table className="table table-hover">
           <thead>
             <tr>
               <th scope="col">ID</th>
@@ -106,7 +109,7 @@ class DemoComponent extends React.Component {
               </tr>
             )}
           </tbody>
-        </table>
+        </Table>
         <BottomBar>
           <div className="float-right">
             <div className="d-flex justify-content-center align-items-center">

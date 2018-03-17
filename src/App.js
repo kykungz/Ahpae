@@ -116,7 +116,7 @@ class App extends React.Component {
           </Link>
           <Link style={{textDecoration: 'none'}} to='/warehouse'>
             <SidebarItem>
-              <i className="pr-3 fa fa-archive" aria-hidden="true"></i>
+              <i className="pr-3 fa fa-cubes" aria-hidden="true"></i>
               Warehouse
             </SidebarItem>
           </Link>
