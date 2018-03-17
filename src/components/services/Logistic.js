@@ -3,7 +3,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Calendar from 'react-calendar'
 
-const Form = styled.div``
+const Form = styled.div`
+  padding-left: 1em;
+  margin-bottom: 1em;
+`
 
 class DemoComponent extends React.Component {
   state = {}
@@ -18,8 +21,7 @@ class DemoComponent extends React.Component {
         <h1 className="pl-2" style={{ borderLeft: 'thick solid red'}} >Order</h1>
         <div className="row">
           <div className="col">
-            <h3>Vehicle Type</h3>
-
+            <h5 className="mt-3">Vehicle Type</h5>
             <Form>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
@@ -28,7 +30,7 @@ class DemoComponent extends React.Component {
                 </label>
               </div>
             </Form>
-
+            <h5>Date</h5>
             <Calendar />
           </div>
           <div className="col">
