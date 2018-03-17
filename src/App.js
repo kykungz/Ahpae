@@ -84,55 +84,61 @@ class App extends React.Component {
 
   sidebarContent = (
     <div>
-      <Link to='/'>
+      <Link style={{textDecoration: 'none'}} to='/'>
         <SidebarTitle>Tesco Lotus Open Services</SidebarTitle>
       </Link>
-      {/* <Link to='/'>
+      {/* <Link style={{textDecoration: 'none'}} to='/'>
         <SidebarItem>
           <i className="pr-3 fa fa-home" aria-hidden="true"></i>
           Home
         </SidebarItem>
       </Link> */}
 
-      <Link to='/dashboard'>
+      <Link style={{textDecoration: 'none'}} to='/dashboard'>
         <SidebarItem>
           <i className="pr-3 fa fa-dashboard" aria-hidden="true"></i>
           Dashboard
         </SidebarItem>
       </Link>
 
-      {/* <Link to='/services'>
+      {/* <Link style={{textDecoration: 'none'}} to='/services'>
         <SidebarItem>
           <i className="pr-3 fa fa-list" aria-hidden="true"></i>
           All Services
         </SidebarItem>
       </Link> */}
       <hr style={{ background: 'gray', margin: '.5em 0'}} />
-          <Link to='/warehouse'>
+          <Link style={{textDecoration: 'none'}} to='/manage'>
+            <SidebarItem>
+              <i className="pr-3 fa fa-pencil-square" aria-hidden="true"></i>
+              Manage Items
+            </SidebarItem>
+          </Link>
+          <Link style={{textDecoration: 'none'}} to='/warehouse'>
             <SidebarItem>
               <i className="pr-3 fa fa-archive" aria-hidden="true"></i>
               Warehouse
             </SidebarItem>
           </Link>
-          <Link to='/logistic'>
+          <Link style={{textDecoration: 'none'}} to='/logistic'>
             <SidebarItem>
               <i className="pr-3 fa fa-truck" aria-hidden="true"></i>
               Logistics
             </SidebarItem>
           </Link>
-          <Link to='/delivery'>
+          <Link style={{textDecoration: 'none'}} to='/delivery'>
             <SidebarItem>
               <i className="pr-3 fa fa-motorcycle" aria-hidden="true"></i>
               Delivery
             </SidebarItem>
           </Link>
-          <Link to='/subscription'>
+          <Link style={{textDecoration: 'none'}} to='/subscription'>
             <SidebarItem>
               <i className="pr-3 fa fa-thumbs-up" aria-hidden="true"></i>
               {' '}Subscription
             </SidebarItem>
           </Link>
-          <Link to='/pos'>
+          <Link style={{textDecoration: 'none'}} to='/pos'>
             <SidebarItem>
               <i className="pr-3 fa fa-window-restore" aria-hidden="true"></i>
               POS System
@@ -140,13 +146,13 @@ class App extends React.Component {
           </Link>
 
       <hr style={{ background: 'gray', margin: '.5em 0'}} />
-      <Link to='/support'>
+      <Link style={{textDecoration: 'none'}} to='/support'>
         <SidebarItem>
           <i className="pr-3 fa fa-info-circle" aria-hidden="true"></i>
           {' '}Support
         </SidebarItem>
       </Link>
-      <Link to='/billing'>
+      <Link style={{textDecoration: 'none'}} to='/billing'>
         <SidebarItem>
           <i className="pr-3 fa fa-credit-card" aria-hidden="true"></i>
           Billing

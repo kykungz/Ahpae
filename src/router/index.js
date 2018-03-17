@@ -13,6 +13,7 @@ import Logistic from '../components/services/Logistic'
 import POS from '../components/services/POS'
 import Subscription from '../components/services/Subscription'
 import Warehouse from '../components/services/Warehouse'
+import Manage from '../components/Manage'
 
 const routes = [
   {
@@ -35,6 +36,10 @@ const routes = [
   {
     path: '/services',
     component: Services
+  },
+  {
+    path: '/manage',
+    component: Manage
   },
   {
     path: '/warehouse',

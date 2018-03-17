@@ -19,7 +19,15 @@ const Image = styled.img.attrs({
 const Content = styled.div`
   border-left: thin solid black;
   ${'' /* margin: 1em 0; */}
+`
 
+const BottomBar = styled.div`
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background: whitesmoke;
+  padding: 0 1em;
+  left: 0;
 `
 
 class DemoComponent extends React.Component {
@@ -60,14 +68,18 @@ class DemoComponent extends React.Component {
     ]
   }
 
-  componentDidMount = () => {} // fetch data here
+  componentDidMount = () => {
+    this.setState({
+      list: [...this.state.list, ...this.state.list, ...this.state.list, ...this.state.list]
+    })
+  }
 
   componentWillUnmount = () => {}
 
   render() {
     return (
-      <div className="table-responsive">
-        <table className="table">
+      <div className="position-relative table-responsive">
+        <table className="table table-hover">
           <thead>
             <tr>
               <th scope="col">ID</th>
@@ -95,6 +107,26 @@ class DemoComponent extends React.Component {
             )}
           </tbody>
         </table>
+        <BottomBar>
+          <div className="float-right">
+            <div className="d-flex justify-content-center align-items-center">
+              <nav className="pt-3 pr-4" aria-label="Page navigationexample">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+              <button className="btn btn-primary">
+                Add Item
+              </button>
+
+            </div>
+
+          </div>
+        </BottomBar>
       </div>
     )
   }
