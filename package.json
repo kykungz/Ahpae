@@ -2,6 +2,7 @@
   "name": "hackathon-starter-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kykungz.github.io/Ahpae/",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "firebase": "^4.11.0",
